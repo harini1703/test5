@@ -5,7 +5,7 @@ import streamlit as st
 pickle_in = open('class.pkl', 'rb')
 clf = pickle.load(pickle_in)
 st.title("Windy Predict")
-b=st.selectbox("SELECT THE Wind Direction:",('Calm','NNW','NE','NW','WNW','NNE','ENE','N','Variable','E','SE','W','SW','S','ESE','SSE','WSW'))
+b=st.selectbox("SELECT THE WIND DIRECTION:",('Calm','NNW','NE','NW','WNW','NNE','ENE','N','Variable','E','SE','W','SW','S','ESE','SSE','WSW'))
 if b=='Calm':
   b=0
 elif b=='NNW':
@@ -40,3 +40,5 @@ elif b=='SSE':
   b=16
 else:
   a=25
+
+if st.button('Predict'):
