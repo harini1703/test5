@@ -40,6 +40,10 @@ elif b=='SSE':
   b=16
 else:
   a=25
+
+def predict_class(features):
+    prediction = clf.predict([features])
+    return prediction[0]
   
 
 if st.button("Predict"):
