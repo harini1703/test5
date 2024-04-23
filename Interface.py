@@ -41,9 +41,13 @@ elif b=='SSE':
 else:
   a=25
   
-result=' '
-if st.button('Predict'):
-    result=clf.predict([[b]]).squeeze()
+
+if st.button("Predict"):
+    features = [b]
+    prediction = predict_class(features)
+    st.write(f"The predicted class label is: {prediction}")
+  
+  
 
 
 
