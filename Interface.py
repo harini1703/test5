@@ -49,7 +49,7 @@ def predict_class(features):
 if st.button("Predict"):
     features = [b]
     prediction = predict_class(features)
-    st.write(f"The predicted class label is: {prediction}")
+    st.write(f"The predicted wind speed is: {prediction}")
   
   
 
