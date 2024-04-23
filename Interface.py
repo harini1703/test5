@@ -40,6 +40,10 @@ elif b=='SSE':
   b=16
 else:
   a=25
+  
+result=' '
+if st.button('Predict'):
+    result=clf.predict([[b]]).squeeze()
 
 
 
