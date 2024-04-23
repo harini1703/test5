@@ -41,4 +41,4 @@ elif b=='SSE':
 else:
   a=25
 
-if st.button('Predict'):
+
